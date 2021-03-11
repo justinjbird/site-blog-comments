@@ -2,7 +2,7 @@
 
 ## What is this?
 
-Comments from https://justinjbird.me.
+This repo holds comments from https://justinjbird.me.
 
 ## How is that set up?
 
