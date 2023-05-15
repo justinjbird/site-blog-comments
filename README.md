@@ -10,4 +10,4 @@ Site powered by [Hugo](https://gohugo.io), comments are powered by [giscus](http
 
 ## How does that work?
 
-Comments on a page result in a discussion thread in this repository. I've blogged about it [here](https://www.justinjbird.me/2023/giscus-for-hugo/).
+Comments on a page result in a discussion thread in this repository, can read more about that [here](https://www.justinjbird.me/2023/giscus-for-hugo/)
