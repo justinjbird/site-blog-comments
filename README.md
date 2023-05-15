@@ -2,12 +2,12 @@
 
 ## What is this?
 
-This repo holds comments from https://justinjbird.me.
+This repository manages the comments system for https://justinjbird.me.
 
 ## How is that set up?
 
-Site powered by [Hugo](https://gohugo.io), comments are powered by [gitalk](https://github.com/gitalk/gitalk).
+Site powered by [Hugo](https://gohugo.io), comments are powered by [giscus]([https://giscus.com](https://giscus.app/)).
 
 ## How does that work?
 
-Details to come, comments posted to site will be added to this repo as [issues](https://github.com/justinjbird/site-blog-comments/issues). Pretty cool!
+Comments on a page result in a discussion thread in this repository. I've blogged about it [here](https://www.justinjbird.me/2023/giscus-for-hugo/).
