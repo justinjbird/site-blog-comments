@@ -2,11 +2,11 @@
 
 ## What is this?
 
-This repository manages the comments system for https://justinjbird.me.
+This repository stores comments from blogs posts at https://justinjbird.me
 
 ## How is that set up?
 
-Site powered by [Hugo](https://gohugo.io), comments are powered by [giscus]([https://giscus.com](https://giscus.app/)).
+Site powered by [Hugo](https://gohugo.io), comments are powered by [giscus](https://giscus.app/)
 
 ## How does that work?
 
