@@ -1,0 +1,14 @@
+name: notify-on-discussion
+
+on:
+  discussion:
+    types: [created, edited, answered]
+  discussion_comment:
+    types: [created, edited]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: post-todoist
+        run: echo foo
