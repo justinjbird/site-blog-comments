@@ -11,4 +11,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: post-todoist
-        run: echo foo
+        run: |
+          curl -X POST https://api.todoist.com/rest/v2/tasks `
+            --data '{\"content\": \"new comment added\", \"description\":\"https://github.com/justinjbird/site-blog-comments/discussions\", \"labels\": [\"web\",\"scheduled\"], \"priority\": 2, \"due_string\": \"today\", \"project_id\": \"2287192456\"}' `
+            -H "Content-Type: application/json" `
+            -H "Authorization: Bearer ${{ TODOIST_API_TOKEN }}"
