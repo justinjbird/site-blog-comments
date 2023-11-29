@@ -3,6 +3,38 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Mac
+*.icloud
+*.DS_Store
+
+# Hugo
+public/
+resources/
+logs/
+.hugo_build.lock
+*/hugo_stats.json
+hugo_stats.json
+assets/jsconfig.json
+
+# Theme Reader
+Thumbs.db
+.DS_Store
+.dist
+.tmp
+.lock
+.sass-cache
+npm-debug.log
+node_modules
+builds
+package-lock.json
+public
+resources
+.hugo_build.lock
+jsconfig.json
+hugo_stats.json
+go.sum
+yarn.lock
+
 # User-specific files
 *.rsuser
 *.suo
