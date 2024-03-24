@@ -16,12 +16,12 @@ jobs:
     secrets:
       webhook: "${{ secrets.TEAMS_WEBHOOK_CXO_JUSTIN }}"
   new-todoist:
-      uses: justinjbird/todoist-tools/.github/workflows/create-task.yml@main
-      with:
-        title: 'New comment on blog'
-        labels: 'blog,scheduled'
-        priority: 2
-        due_string: 'today'
-        project_id: 2287287987
-      secrets:
-        token: ${{ secrets.TODOIST_TOKEN }}
+    uses: justinjbird/todoist-tools/.github/workflows/create-task.yml@main
+    with:
+      title: 'New comment on blog'
+      labels: 'blog,scheduled'
+      priority: 2
+      due_string: 'today'
+      project_id: 2287287987
+    secrets:
+      token: ${{ secrets.TODOIST_TOKEN }}
