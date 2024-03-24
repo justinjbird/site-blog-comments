@@ -9,13 +9,6 @@ on:
 
 jobs:
   new-task:
-    uses: justinjbird/todoist-tools/.github/workflows/create-task.yml@main
+    uses: justinjbird/workflow/.github/workflows/message-teams.yml@main
     with:
-      title: New Comment Added
-      description: https://github.com/justinjbird/site-blog-comments/discussions
-      labels: web, scheduled
-      priority: 2
-      due_string: today
-      project_id: 2287192456
-    secrets:
-      token: "${{ secrets.TODOIST_API_TOKEN }}"
+      message: New comment on discussion https://github.com/justinjbird/site-blog-comments/discussions
