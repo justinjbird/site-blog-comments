@@ -15,7 +15,7 @@ jobs:
     secrets:
       webhook: "${{ secrets.TEAMS_WEBHOOK_CXO_JUSTIN }}"
   todoist-task:
-    uses: justinjbird/workflow/.github/workflows/todoist-task.yml@main
+    uses: justinjbird/workflow/.github/workflows/new-todoist.yml@main
     with:
       title: "New activity in comments on [blog](https://github.com/justinjbird/site-blog-comments/discussions)"
       labels: blog, scheduled
