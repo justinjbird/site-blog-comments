@@ -8,7 +8,9 @@ on:
   push:
 
 jobs:
-  new-task:
+  teams-message:
     uses: justinjbird/workflow/.github/workflows/message-teams.yml@main
     with:
-      message: New comment on discussion https://github.com/justinjbird/site-blog-comments/discussions
+      message: "New activity in comments on [blog](https://github.com/justinjbird/site-blog-comments/discussions)"
+    secrets:
+      webhook: "${{ secrets.TEAMS_WEBHOOK_CXO_JUSTIN }}"
