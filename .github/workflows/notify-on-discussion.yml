@@ -14,3 +14,20 @@ jobs:
       message: "New activity in comments on [blog](https://github.com/justinjbird/site-blog-comments/discussions)"
     secrets:
       webhook: "${{ secrets.TEAMS_WEBHOOK_CXO_JUSTIN }}"
+  todoist-task:
+    uses: justinjbird/workflow/.github/workflows/todoist-task.yml@main
+    with:
+      title: "New activity in comments on [blog](https://github.com/justinjbird/site-blog-comments/discussions)"
+      labels: blog, scheduled
+      priority: 3
+      due_string: "today"
+      project_id: 2192133472
+    secrets:
+      token: "${{ secrets.TODOIST_TOKEN }}"
+  raise-error:
+    uses: justinjbird/workflow/.github/workflows/message-teams.yml@main
+    if: failure()
+    with:
+      message: "${{ github.action }} action failed"
+    secrets:
+      webhook: "${{ secrets.TEAMS_WEBHOOK_CXO_JUSTIN }}"
