@@ -6,6 +6,7 @@ on:
   discussion_comment:
     types: [created, edited]
   push:
+  workflow_dispatch:
 
 jobs:
   teams-message:
