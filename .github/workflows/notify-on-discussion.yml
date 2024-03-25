@@ -18,10 +18,10 @@ jobs:
   new-todoist:
     uses: justinjbird/workflow/.github/workflows/new-todoist.yml@main
     with:
-      title: 'New comment on blog'
-      labels: 'blog,scheduled'
+      title: New comment on blog
+      labels: blog,scheduled
       priority: 2
-      due_string: 'today'
+      due_string: today
       project_id: 2287287987
     secrets:
       token: ${{ secrets.TODOIST_TOKEN }}
