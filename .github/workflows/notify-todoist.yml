@@ -13,9 +13,9 @@ jobs:
     uses: justinjbird/workflow/.github/workflows/new-todoist-task.yml@main
     with:
       title: "New activity in comments on [blog](https://github.com/justinjbird/site-blog-comments/discussions)"
-      labels: blog,scheduled
+      labels: "anywhere,scheduled, 5"
       priority: 2
-      due_string: today
-      project_id: 2287287987
+      due_string: "today"
+      project_id: 2287192456 # blog
     secrets:
-      token: ${{ secrets.TODOIST_TOKEN }}
+      token: ${{ secrets.TODOIST_API_TOKEN }}
