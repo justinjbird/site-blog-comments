@@ -1,0 +1,12 @@
+name: notify-teams
+
+on:
+  workflow_dispatch:
+
+jobs:
+  teams-message:
+    uses: justinjbird/workflow/.github/workflows/message-teams.yml@main
+    with:
+      message: "New activity in comments on [blog](https://github.com/justinjbird/site-blog-comments/discussions)"
+    secrets:
+      webhook: "${{ secrets.TEAMS_WEBHOOK_CXO_JUSTIN }}"
