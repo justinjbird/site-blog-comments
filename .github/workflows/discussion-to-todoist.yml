@@ -1,4 +1,4 @@
-name: notify-todoist
+name: discussion-to-todoist
 
 on:
   discussion:
@@ -10,10 +10,10 @@ on:
 
 jobs:
   new-todoist:
-    uses: justinjbird/workflow/.github/workflows/new-todoist-task.yml@main
+    uses: justinjbird/workflow/.github/workflows/notify-todoist.yml@main
     with:
       title: "New activity in comments on [blog](https://github.com/justinjbird/site-blog-comments/discussions)"
-      labels: "anywhere,scheduled, 5"
+      labels: "anywhere,scheduled,5"
       priority: 2
       due_string: "today"
       project_id: 2287192456 # blog

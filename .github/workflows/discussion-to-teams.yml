@@ -1,11 +1,11 @@
-name: notify-teams
+name: discussion-to-teams
 
 on:
   workflow_dispatch:
 
 jobs:
   teams-message:
-    uses: justinjbird/workflow/.github/workflows/message-teams.yml@main
+    uses: justinjbird/workflow/.github/workflows/notify-teams.yml@main
     with:
       message: "New activity in comments on [blog](https://github.com/justinjbird/site-blog-comments/discussions)"
     secrets:
