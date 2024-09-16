@@ -5,8 +5,6 @@ on:
     types: [created]
   discussion_comment:
     types: [created]
-  push:
-  workflow_dispatch:
 
 jobs:
   new-todoist:
