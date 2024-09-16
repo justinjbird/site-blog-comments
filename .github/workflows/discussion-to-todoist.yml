@@ -12,8 +12,8 @@ jobs:
   new-todoist:
     uses: justinjbird/workflow/.github/workflows/notify-todoist.yml@main
     with:
-      title: "New activity in comments on [blog](https://github.com/justinjbird/site-blog-comments/discussions) ${{ inputs.discussion.title }}"
-      description: "${{ inputs.discussion_comment.body }}"
+      title: "New activity in comments on [blog](${{ github.event.discussion.html_url }})"
+      description: "${{ github.event.comment.body }}"
       labels: "anywhere,scheduled,5"
       priority: 2
       due_string: "today"
