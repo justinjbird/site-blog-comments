@@ -56,8 +56,8 @@ main {
   --color-btn-primary-border: var(--light-accent-1);
   --color-btn-primary-shadow: 0 0 transparent;
   --color-btn-primary-inset-shadow: 0 0 transparent;
-  --color-btn-primary-hover-bg: var(--light-accent-4);
-  --color-btn-primary-hover-border: var(--light-accent-4);
+  --color-btn-primary-hover-bg: var(--dark-body);
+  --color-btn-primary-hover-border: var(--light-accent-1);
   --color-btn-primary-selected-bg: var(--light-accent-1);
   --color-btn-primary-selected-shadow: 0 0 transparent;
   --color-btn-primary-disabled-text: #ffffff99;
@@ -168,12 +168,21 @@ html {
   color: var(--light-accent-1);
 }
 
-.gsc-comment-box .btn-primary:hover {
-  color: var(--light-text-strong);
+/* Primary buttons (Sign in with GitHub, Comment) — share-chip reverse hover */
+.gsc-homepage .btn-primary:hover,
+.gsc-homepage .btn-primary:focus-visible,
+.gsc-comment-box .btn-primary:hover,
+.gsc-comment-box .btn-primary:focus-visible {
+  background-color: var(--dark-body) !important;
+  border-color: var(--light-accent-1) !important;
+  color: var(--light-accent-1) !important;
 }
 
-.gsc-comment-box .btn-primary:hover .octicon {
-  color: var(--light-accent-1);
+.gsc-homepage .btn-primary:hover .octicon,
+.gsc-homepage .btn-primary:focus-visible .octicon,
+.gsc-comment-box .btn-primary:hover .octicon,
+.gsc-comment-box .btn-primary:focus-visible .octicon {
+  color: var(--light-accent-1) !important;
 }
 
 main .gsc-comment-box-textarea::placeholder {

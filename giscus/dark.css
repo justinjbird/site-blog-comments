@@ -54,8 +54,8 @@ main {
   --color-btn-primary-border: var(--dark-accent-1);
   --color-btn-primary-shadow: 0 0 transparent;
   --color-btn-primary-inset-shadow: 0 0 transparent;
-  --color-btn-primary-hover-bg: var(--dark-accent-4);
-  --color-btn-primary-hover-border: var(--dark-accent-4);
+  --color-btn-primary-hover-bg: var(--light-body);
+  --color-btn-primary-hover-border: var(--dark-accent-1);
   --color-btn-primary-selected-bg: var(--dark-accent-1);
   --color-btn-primary-selected-shadow: 0 0 transparent;
   --color-btn-primary-disabled-text: #ffffff99;
@@ -166,6 +166,23 @@ html {
 /* Inactive Write/Preview tabs — accent 1 on hover */
 .gsc-comment-box-tabs button.border-transparent:hover {
   color: var(--dark-accent-1);
+}
+
+/* Primary buttons (Sign in with GitHub, Comment) — share-chip reverse hover */
+.gsc-homepage .btn-primary:hover,
+.gsc-homepage .btn-primary:focus-visible,
+.gsc-comment-box .btn-primary:hover,
+.gsc-comment-box .btn-primary:focus-visible {
+  background-color: var(--light-body) !important;
+  border-color: var(--dark-accent-1) !important;
+  color: var(--dark-accent-1) !important;
+}
+
+.gsc-homepage .btn-primary:hover .octicon,
+.gsc-homepage .btn-primary:focus-visible .octicon,
+.gsc-comment-box .btn-primary:hover .octicon,
+.gsc-comment-box .btn-primary:focus-visible .octicon {
+  color: var(--dark-accent-1) !important;
 }
 
 main .gsc-comment-box-textarea::placeholder {
