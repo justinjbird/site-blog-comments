@@ -79,7 +79,7 @@ main {
   --color-canvas-subtle: var(--light-surface);
 
   --color-border-default: var(--light-border);
-  --color-border-muted: var(--light-surface);
+  --color-border-muted: var(--light-border);
   --color-neutral-muted: #e0d8dc66;
 
   --color-accent-fg: var(--light-accent-1);
@@ -117,11 +117,12 @@ html {
 
 .gsc-comment-box-tabs {
   background-color: transparent !important;
-  border-bottom: 1px solid var(--light-body) !important;
+  border-bottom: 1px solid var(--light-border) !important;
 }
 
 .gsc-comment-box-tabs button.color-bg-canvas {
   background-color: var(--light-body) !important;
+  border-color: var(--light-border) !important;
 }
 
 .gsc-comment-box-tabs button.border-transparent {
@@ -214,4 +215,13 @@ main .gsc-loading-image {
 
 .gsc-homepage-bg {
   background-color: transparent;
+}
+
+.gsc-comment-box-textarea,
+.gsc-comment-box-textarea-extras,
+.gsc-comment-box-preview,
+.gsc-social-reaction-summary-item,
+.gsc-reply-box,
+.gsc-reply-box .form-control {
+  border-color: var(--light-border) !important;
 }
