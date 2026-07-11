@@ -1,8 +1,7 @@
-/*! Site palette — edit values here to retheme both Giscus themes.
- *  Synced from justinjbird.com data/theme.json (default + darkmode). */
+/*! Site palette — generated from data/theme.json. Run: just theme */
 main {
   /* Light — Giscus role remap: accent-4→body, body→theme_light, theme_light→transparent
-   * Source (theme.json): body #F5F2F0, theme_light #FFFFFF, accent-4 #073B4C */
+   * Source (theme.json): body #F5F2F0, theme_light #FFFFFF, accent-4→body #F5F2F0 */
   --light-body: #ffffff;
   --light-border: #e0d8dc;
   --light-surface: transparent;
@@ -16,16 +15,16 @@ main {
   --light-accent-5: #ef476f;
 
   /* Dark — Giscus role remap: accent-4→body, body→theme_light, theme_light→transparent
-   * Source (theme.json): body #211C1F, theme_light #433A3F, accent-4 #073B4C */
-  --dark-body: #433a3f;
-  --dark-border: #5a4f55;
-  --dark-surface: #433a3f;
-  --dark-text: #c8c2c6;
-  --dark-text-strong: #f2eef0;
-  --dark-text-muted: #9a9298;
+   * Source (theme.json): body #0F1C22, theme_light #1A2F39, accent-4→body #0F1C22 */
+  --dark-body: #1a2f39;
+  --dark-border: #475860;
+  --dark-surface: transparent;
+  --dark-text: #a3abaf;
+  --dark-text-strong: #d1d5d7;
+  --dark-text-muted: #758288;
   --dark-accent-1: #118ab2;
   --dark-accent-2: #ffd166;
   --dark-accent-3: #06d6a0;
-  --dark-accent-4: #211c1f;
+  --dark-accent-4: #0f1c22;
   --dark-accent-5: #ef476f;
 }
