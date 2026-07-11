@@ -1,0 +1,31 @@
+/*! Site palette — edit values here to retheme both Giscus themes.
+ *  Synced from justinjbird.com data/theme.json (default + darkmode). */
+main {
+  /* Light — Giscus role remap: accent-4→body, body→theme_light, theme_light→transparent
+   * Source (theme.json): body #F5F2F0, theme_light #FFFFFF, accent-4 #073B4C */
+  --light-body: #ffffff;
+  --light-border: #e0d8dc;
+  --light-surface: transparent;
+  --light-text: #3d3539;
+  --light-text-strong: #211c1f;
+  --light-text-muted: #7a7076;
+  --light-accent-1: #118ab2;
+  --light-accent-2: #ffd166;
+  --light-accent-3: #06d6a0;
+  --light-accent-4: #f5f2f0;
+  --light-accent-5: #ef476f;
+
+  /* Dark — Giscus role remap: accent-4→body, body→theme_light, theme_light→transparent
+   * Source (theme.json): body #211C1F, theme_light #433A3F, accent-4 #073B4C */
+  --dark-body: #433a3f;
+  --dark-border: #5a4f55;
+  --dark-surface: #433a3f;
+  --dark-text: #c8c2c6;
+  --dark-text-strong: #f2eef0;
+  --dark-text-muted: #9a9298;
+  --dark-accent-1: #118ab2;
+  --dark-accent-2: #ffd166;
+  --dark-accent-3: #06d6a0;
+  --dark-accent-4: #211c1f;
+  --dark-accent-5: #ef476f;
+}

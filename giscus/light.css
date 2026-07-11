@@ -1,0 +1,217 @@
+@import url("./palette.css");
+
+/*! Giscus light theme — palette mapped to Primer roles (mirrors giscus-dark.css). */
+main {
+  --color-prettylights-syntax-comment: var(--light-text-muted);
+  --color-prettylights-syntax-constant: var(--light-accent-1);
+  --color-prettylights-syntax-entity: var(--light-accent-1);
+  --color-prettylights-syntax-storage-modifier-import: var(--light-accent-2);
+  --color-prettylights-syntax-entity-tag: var(--light-accent-3);
+  --color-prettylights-syntax-keyword: var(--light-accent-5);
+  --color-prettylights-syntax-string: var(--light-accent-3);
+  --color-prettylights-syntax-variable: var(--light-accent-2);
+  --color-prettylights-syntax-brackethighlighter-unmatched: var(
+    --light-accent-5
+  );
+  --color-prettylights-syntax-invalid-illegal-text: var(--light-text-strong);
+  --color-prettylights-syntax-invalid-illegal-bg: var(--light-accent-5);
+  --color-prettylights-syntax-carriage-return-text: var(--light-text-strong);
+  --color-prettylights-syntax-carriage-return-bg: var(--light-accent-5);
+  --color-prettylights-syntax-string-regexp: var(--light-accent-3);
+  --color-prettylights-syntax-markup-list: var(--light-accent-2);
+  --color-prettylights-syntax-markup-heading: var(--light-accent-1);
+  --color-prettylights-syntax-markup-italic: var(--light-text);
+  --color-prettylights-syntax-markup-bold: var(--light-text-strong);
+  --color-prettylights-syntax-markup-deleted-text: var(--light-accent-5);
+  --color-prettylights-syntax-markup-deleted-bg: var(--light-body);
+  --color-prettylights-syntax-markup-inserted-text: var(--light-accent-3);
+  --color-prettylights-syntax-markup-inserted-bg: var(--light-body);
+  --color-prettylights-syntax-markup-changed-text: var(--light-accent-2);
+  --color-prettylights-syntax-markup-changed-bg: var(--light-body);
+  --color-prettylights-syntax-markup-ignored-text: var(--light-text-muted);
+  --color-prettylights-syntax-markup-ignored-bg: var(--light-accent-1);
+  --color-prettylights-syntax-meta-diff-range: var(--light-accent-1);
+  --color-prettylights-syntax-brackethighlighter-angle: var(--light-text-muted);
+  --color-prettylights-syntax-sublimelinter-gutter-mark: var(
+    --light-text-muted
+  );
+  --color-prettylights-syntax-constant-other-reference-link: var(
+    --light-accent-1
+  );
+
+  --color-btn-text: var(--light-text);
+  --color-btn-bg: var(--light-surface);
+  --color-btn-border: var(--light-border);
+  --color-btn-shadow: 0 0 transparent;
+  --color-btn-inset-shadow: 0 0 transparent;
+  --color-btn-hover-bg: var(--light-border);
+  --color-btn-hover-border: var(--light-text-muted);
+  --color-btn-active-bg: var(--light-border);
+  --color-btn-active-border: var(--light-text-muted);
+  --color-btn-selected-bg: var(--light-body);
+  --color-btn-outline-text: var(--light-accent-1);
+
+  --color-btn-primary-text: #ffffff;
+  --color-btn-primary-bg: var(--light-accent-1);
+  --color-btn-primary-border: var(--light-accent-1);
+  --color-btn-primary-shadow: 0 0 transparent;
+  --color-btn-primary-inset-shadow: 0 0 transparent;
+  --color-btn-primary-hover-bg: var(--light-accent-4);
+  --color-btn-primary-hover-border: var(--light-accent-4);
+  --color-btn-primary-selected-bg: var(--light-accent-1);
+  --color-btn-primary-selected-shadow: 0 0 transparent;
+  --color-btn-primary-disabled-text: #ffffff99;
+  --color-btn-primary-disabled-bg: #118ab266;
+  --color-btn-primary-disabled-border: transparent;
+
+  --color-action-list-item-default-hover-bg: var(--light-border);
+  --color-segmented-control-bg: var(--light-border);
+  --color-segmented-control-button-bg: var(--light-body);
+  --color-segmented-control-button-selected-border: var(--light-text-muted);
+
+  --color-fg-default: var(--light-text);
+  --color-fg-muted: var(--light-text-muted);
+  --color-fg-subtle: var(--light-text-muted);
+
+  --color-canvas-default: var(--light-body);
+  --color-canvas-overlay: var(--light-surface);
+  --color-canvas-inset: var(--light-accent-4);
+  --color-canvas-subtle: var(--light-surface);
+
+  --color-border-default: var(--light-border);
+  --color-border-muted: var(--light-surface);
+  --color-neutral-muted: #e0d8dc66;
+
+  --color-accent-fg: var(--light-accent-1);
+  --color-accent-emphasis: var(--light-accent-1);
+  --color-accent-muted: #118ab266;
+  --color-accent-subtle: #118ab226;
+
+  --color-success-fg: var(--light-accent-3);
+  --color-attention-fg: var(--light-accent-2);
+  --color-attention-muted: var(--light-accent-1);
+  --color-attention-subtle: #118ab226;
+  --color-danger-fg: var(--light-accent-5);
+  --color-danger-muted: #ef476f66;
+  --color-danger-subtle: #ef476f33;
+
+  --color-primer-shadow-inset: 0 0 transparent;
+  --color-scale-gray-1: var(--light-border);
+  --color-scale-blue-1: var(--light-accent-1);
+
+  --color-social-reaction-bg-hover: var(--color-scale-gray-1);
+  --color-social-reaction-bg-reacted-hover: #118ab233;
+}
+
+main,
+body,
+html {
+  background-color: transparent !important;
+}
+
+.gsc-comment-box {
+  border: 1px solid var(--color-border-default) !important;
+  background-color: var(--color-canvas-default) !important;
+  border-radius: 0.5rem;
+}
+
+.gsc-comment-box-tabs {
+  background-color: transparent !important;
+  border-bottom: 1px solid var(--light-body) !important;
+}
+
+.gsc-comment-box-tabs button.color-bg-canvas {
+  background-color: var(--light-body) !important;
+}
+
+.gsc-comment-box-tabs button.border-transparent {
+  background-color: transparent !important;
+}
+
+.gsc-comment-box-textarea textarea,
+.gsc-comment-box .form-control textarea,
+.gsc-comment-box .form-control input {
+  background-color: var(--color-canvas-overlay) !important;
+  color: var(--color-fg-default) !important;
+  border: 1px solid var(--color-border-default) !important;
+}
+
+.gsc-comment-box .gsc-toolbar-preview,
+.gsc-comment-box .gsc-toolbar {
+  background-color: var(--color-canvas-overlay) !important;
+}
+
+/* Icons — strong text default, accent 1 on hover */
+.gsc-comment-box-md-toolbar .gsc-toolbar-item,
+.gsc-comment-box-markdown-hint,
+.ClipboardButton,
+.gsc-reactions-button,
+.gsc-comments .octicon:not(.color-text-success),
+.btn:not(.btn-primary) .octicon:not(.color-text-success) {
+  color: var(--light-text-strong);
+  text-decoration: none;
+}
+
+.gsc-comment-box-md-toolbar .gsc-toolbar-item:hover,
+.gsc-comment-box-md-toolbar .gsc-toolbar-item:focus,
+.gsc-comment-box-markdown-hint:hover,
+.ClipboardButton:hover,
+.gsc-reactions-button:hover,
+.gsc-comments button:hover .octicon:not(.color-text-success),
+.gsc-comments a:hover .octicon:not(.color-text-success),
+.btn:not(.btn-primary):hover .octicon:not(.color-text-success) {
+  color: var(--light-accent-1);
+}
+
+.gsc-comment-box-tabs button.border-transparent:hover {
+  color: var(--light-accent-1);
+}
+
+.gsc-comment-box .btn-primary:hover {
+  color: var(--light-text-strong);
+}
+
+.gsc-comment-box .btn-primary:hover .octicon {
+  color: var(--light-accent-1);
+}
+
+main .gsc-comment-box-textarea::placeholder {
+  color: var(--light-text-muted);
+}
+
+main .pagination-loader-container {
+  background-image: url(https://github.com/images/modules/pulls/progressive-disclosure-line.svg);
+}
+
+main .gsc-loading-image {
+  background-image: url(https://github.githubassets.com/images/mona-loading-default.gif);
+}
+
+.gsc-reactions-count {
+  color: var(--light-text);
+}
+
+.gsc-timeline {
+  flex-direction: column-reverse;
+}
+
+.gsc-header {
+  padding-bottom: 1rem;
+}
+
+.gsc-comments > .gsc-header {
+  order: 1;
+}
+
+.gsc-comments > .gsc-comment-box {
+  margin-bottom: 1rem;
+  order: 2;
+}
+
+.gsc-comments > .gsc-timeline {
+  order: 3;
+}
+
+.gsc-homepage-bg {
+  background-color: transparent;
+}
