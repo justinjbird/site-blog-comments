@@ -15,9 +15,9 @@ main {
   --light-accent-5: #ef476f;
 
   /* Dark — Giscus role remap: accent-4→body, body→panels, panels→transparent
-   * Source (theme.json): body #1A2F39, panels #1E2D34, accent-4→body #1A2F39 */
-  --dark-body: #1e2d34;
-  --dark-border: #376277;
+   * Source (theme.json): body #0B1418, panels #0F1A20, accent-4→body #0B1418 */
+  --dark-body: #0f1a20;
+  --dark-border: #202b31;
   --dark-surface: transparent;
   --dark-text: #a3b5bd;
   --dark-text-strong: #d1dde3;
@@ -25,6 +25,6 @@ main {
   --dark-accent-1: #118ab2;
   --dark-accent-2: #ffd166;
   --dark-accent-3: #06d6a0;
-  --dark-accent-4: #1a2f39;
+  --dark-accent-4: #0b1418;
   --dark-accent-5: #ef476f;
 }
