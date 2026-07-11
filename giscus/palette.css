@@ -1,7 +1,7 @@
 /*! Site palette — generated from data/theme.json. Run: just theme */
 main {
-  /* Light — Giscus role remap: accent-4→body, body→theme_light, theme_light→transparent
-   * Source (theme.json): body #F5F2F0, theme_light #FFFFFF, accent-4→body #F5F2F0 */
+  /* Light — Giscus role remap: accent-4→body, body→panels, panels→transparent
+   * Source (theme.json): body #F5F2F0, panels #FFFFFF, accent-4→body #F5F2F0 */
   --light-body: #ffffff;
   --light-border: #e0d8dc;
   --light-surface: transparent;
@@ -14,17 +14,17 @@ main {
   --light-accent-4: #f5f2f0;
   --light-accent-5: #ef476f;
 
-  /* Dark — Giscus role remap: accent-4→body, body→theme_light, theme_light→transparent
-   * Source (theme.json): body #0F1C22, theme_light #1A2F39, accent-4→body #0F1C22 */
-  --dark-body: #1a2f39;
-  --dark-border: #475860;
+  /* Dark — Giscus role remap: accent-4→body, body→panels, panels→transparent
+   * Source (theme.json): body #1A2F39, panels #1E2D34, accent-4→body #1A2F39 */
+  --dark-body: #1e2d34;
+  --dark-border: #376277;
   --dark-surface: transparent;
-  --dark-text: #a3abaf;
-  --dark-text-strong: #d1d5d7;
-  --dark-text-muted: #758288;
+  --dark-text: #a3b5bd;
+  --dark-text-strong: #d1dde3;
+  --dark-text-muted: #758a94;
   --dark-accent-1: #118ab2;
   --dark-accent-2: #ffd166;
   --dark-accent-3: #06d6a0;
-  --dark-accent-4: #0f1c22;
+  --dark-accent-4: #1a2f39;
   --dark-accent-5: #ef476f;
 }
