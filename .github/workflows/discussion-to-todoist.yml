@@ -1,0 +1,20 @@
+name: discussion-to-todoist
+
+on:
+  discussion:
+    types: [created]
+  discussion_comment:
+    types: [created]
+
+jobs:
+  new-todoist:
+    uses: justinjbird/workflow/.github/workflows/notify-todoist.yml@main
+    with:
+      title: "New activity in [comments](${{ github.event.discussion.html_url }}) on [blog](https://justinjbird.me/${{ github.event.discussion.title }})"
+      description: '${{ github.event.comment.body }}'
+      labels: "anywhere,scheduled,5"
+      priority: 2
+      due_string: "today"
+      project_id: 2287192456 # blog
+    secrets:
+      token: ${{ secrets.TODOIST_API_TOKEN }}
