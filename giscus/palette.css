@@ -13,6 +13,7 @@ main {
   --light-accent-3: #06d6a0;
   --light-accent-4: #f5f2f0;
   --light-accent-5: #ef476f;
+  --light-accent-6: #ae48f0;
 
   /* Dark — Giscus role remap: accent-4→body, body→panels, panels→transparent
    * Source (theme.json): body #0B1418, panels #0F1A20, accent-4→body #0B1418 */
@@ -27,4 +28,5 @@ main {
   --dark-accent-3: #06d6a0;
   --dark-accent-4: #0b1418;
   --dark-accent-5: #ef476f;
+  --dark-accent-6: #ae48f0;
 }
